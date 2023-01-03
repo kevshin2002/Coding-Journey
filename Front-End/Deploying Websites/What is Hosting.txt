@@ -1,0 +1,68 @@
+What's Covered:
+What is hosting
+Why hosting matters
+Ways to host
+
+ Hosting Providers - business that maintains all the resources needed to host applications
+
+ Types of Hosting:
+ Website Builders - build a website without manually writing code
+ Shared Web Hosting - share a server with other people
+ Dedicated Web Hosting - running a personal server
+ Cloud Hosting - running application in the cloud
+
+ Cloud Hosting Types:
+ Infrastructure as a Service (IaaS)
+ Platform as a Service (PaaS)
+ Function as a Service (FaaS)
+
+ Infrastructure as a Service - raw infrastructure resources but managed by you
+ Managed by provider:
+ Virtualization
+ Servers
+ Storage
+ Network
+
+ Managed by you:
+ Applications
+ Data
+ Runtime
+ Middleware
+ OS
+
+ Platform as a Service - provider manages infrastructure, you deploy apps
+ Managed by provider:
+ Virtualization
+ Servers
+ Storage
+ Network
+ OS
+ Middleware
+
+ Managed by you:
+ Applications
+ Data
+ 
+
+ Function as a Service - provider manages infrastructure, you deploy functions
+ Managed by provider:
+ Virtualization
+ Servers
+ Storage
+ Network
+ OS
+ Middleware
+
+ Managed by you:
+ Functions
+ Data
+
+ What to choose?
+ GitHub Pages:
+ Good for static applications
+ 
+ Heroku:
+ Good for more complex full-stack apps
+
+ Digital Ocean:
+ Full control over cloud resources

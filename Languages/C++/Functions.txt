@@ -1,0 +1,114 @@
+The Function of Functions:
+As programmers, we reuse the same blocks of code over and over, and we can use functions to leverage this fact.
+Also known as a method or procedure, a function is a named group of code statements that accomplish something together.
+
+There are great reasons to use functions in our code:
+A single line can make all that code fire off instead of a whole bunch of lines.
+You can build DRY (Don't repeat yourself) code, reusing the code we already wrote.
+Functions help make our code flexible and modular, meaning we can gruop our code more easily by task.
+
+main() is a function already.
+
+Built-in Functions:
+C++ comes chock-full of functions that are already created as part of the standard library.
+To gain access to various functions, we include the preprocessor directive or headers like <cmath> or <string>
+
+Calling a function is how we get a function to take action.
+To call a function, we just need the function name followed by a pair of parentheses like sqrt(9).
+
+Declare & Define:
+A C++ function is comprised of two distinct parts:
+Declaration: this includes the function's name, what the return type is, and any parameters (if the function will accept input values, known as argments).
+Definition: also known as the body of the function, this contains the instructions for what the function is supposed to do.
+
+Overall structure:
+return_type function_name(any, parameters, you, have){
+	//code block
+
+	return output_if_there_is_any;
+}
+
+Void - The Point of No Return:
+A function with no input and no output is created using a void specifier which is added in the function declaration before the function name.
+A void function, also known as a subroutine, has no return value, which makes it ideal for situations where we just want to print stuff to the terminal.
+
+Return Types - Beyond the Void:
+If we want our function to return something and pass information back to the rest of our program, we specify the type.
+A function can return most data types.
+
+Note: The return statement is the last line of code that a function will execute.
+
+How Return Values Work:
+When functions have a return type other than void, the function has two new requirements:
+There must be a value returned from the function.
+The return value must be the same type as the function's return type.
+
+The return value gets returned to where the function is called.
+
+Example:
+std::string feed_the_cat() {
+ 
+  return "Cat is fed!";
+ 
+}
+
+int main() {
+ 
+  std::string cat_message = feed_the_cat();
+  std::cout << cat_message;
+ 
+}
+
+Parameters & Arguments:
+Parameters, also called formal parameters, are variables used in a function's definition.
+They act as placeholders for the input values that we'll use during our function call.
+The value we pass in a function call is called an argment or actual parameter.
+Example:
+double get_tip(double price) {
+ 
+  return price * 0.2;
+ 
+}
+double tip = get_tip(15.75); // tip would be 3.15
+
+Tackling Multiple Arguments:
+We can add as many parameters as we want to our function declaration.
+Example:
+double get_tip(double price, double tip, bool total_included) {
+ 
+  if (total_included) {
+ 
+    return price * tip + price;
+ 
+  } else {
+ 
+    return price * tip;
+ 
+  }
+ 
+}
+
+Here, we have three parameters:
+double price
+double itp
+bool total_included
+
+It's important that when we call functions, we provide arguments in the order that the parameter was declared in the function.
+
+How Parameters & Arguments Work:
+A function with parameters has a couple of requirements:
+The function call must include the same number of arguments as there are parameters.
+The corresponding argments must be passed in the same order.
+
+Review:
+A function is a named group of statements that do something together.
+Functions allow us to create more flexible, modular, and DRY code.
+C++ has many built-in functions that we can use.
+Functions are called via function_name();
+A function has a declaration with a return type and possible parameters.
+A function has a definition (or body) with a group of statements and a possible return value.
+void functions do not have return values.
+Functions with a return value have return statements.
+Parameters are variables used as placeholders for function input values.
+Arguments are a function's actual input values.
+

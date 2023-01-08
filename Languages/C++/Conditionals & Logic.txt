@@ -1,0 +1,81 @@
+Introduction to Conditionals & Logic:
+We'll cover:
+if, else if, and else statements
+switch statements
+Relational operators
+Logical operators
+
+If Statement:
+An if statement is used to test an expression for truth and execute some code based on it.
+If the condition is true, the statements within are executed, else, the statements are skipped.
+
+The if keyword is followed by a set of parentheses () where inside of it is the condition provided that evaluates to true or false.
+If the condition evaluates to true, the code inside the curly braces executes.
+if the condition evaluates to false, the code won't execute.
+
+Relational Operators:
+When writing conditional statements, sometimes we need to use different types of operators to compare values.
+They're called relational operators:
+== - equal to
+!= - not equal to
+> - greater than
+< - less than
+>= - greater than or equal to
+<= - less than or equal to
+
+Relational operators compare the value on the left with the value on the right.
+
+Else Clause:
+We can also add an else clause to an if statement to provide code that only executes if the condition is false.
+It functions the same as an if except that the statement within the else is executed if the condition provided in the if statement is false.
+
+Else if:
+This is basically adding an additional if statement to the original.
+If we want two conditions, we can have an if, and then an else if, where we oversee two conditions.
+We can also add an else statement at the end of this in case we don't have all the cases.
+
+Switch Statement:
+Programs with multiple outcomes are so common that C++ provides a special statement for it, the switch statement.
+
+A switch statement provides an alternative syntax that is easier to read and write.
+However, they're found less frequently in the wild.
+Example:
+switch (grade) {
+ 
+  case 9:
+    std::cout << "Freshman\n";
+    break;
+  case 10:
+    std::cout << "Sophomore\n";
+    break;
+  case 11:
+    std::cout << "Junior\n";
+    break;
+  case 12:
+    std::cout << "Senior\n";
+    break;
+  default:
+    std::cout << "Invalid\n";
+    break;
+ 
+ }
+
+ The switch keyword initiates the statement and is followed by (), which contains the value that each case will compare.
+ In the example, the value or expression of the switch statement is grade.
+ One restriction on this expression is that it must evaluate to an integral type.
+
+The case keyword checks if the expression matches the specified value that comes after it.
+If the value is equal to 9, the statement will run.
+The break keyword tells that computer to exit the block and not execute any more code or check and other cases inside the code block.
+At the end of each switch statement, there is a default statement.
+If none of the cases are true, then the code in the default statement will run.
+
+Note: Without the break keyword at the end of each case, the program would execute the code for the first matching case and all subsequent cases, including the default code.
+
+Review:
+An if statement checks a condition and will execute a task if that condition evaluates to true.
+if/else statements make binary decisions and execute different code blocks based on a provided condition.
+We can add more conditions using else if statements.
+Relational operators, including <, >, <=, >=, ==, and != can compare two values.
+A switch statement can be used to simplify the process of writing multiple else if statements.
+The break keyword stops the remaining casees from being checked and executed in a switch statement.

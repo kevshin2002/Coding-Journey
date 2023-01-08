@@ -1,0 +1,73 @@
+Introduction to Vectors:
+A vector is a sequence of elements that we can access by index.
+
+Creating a Vector:
+The std::vector lives in the <vector> header, so we must first include this pre-processor directive by typing this line:
+#include <vector>
+
+The syntax to create a vector looks like:
+std::vector<type> name;
+
+Note: The type of vector (what data type is stored inside) cannot be changed after the declaration.
+
+Initializing a Vector:
+We can create an initialize a vector instead of declaring it.
+Example:
+std::vector<double> location = {42.651443, -73.749302};
+
+Another way we can intialize our vector is by presizing, or setting the size.
+Example:
+std::vector<double> location(2);
+
+Index:
+An index refers to an element's position within an ordered list.
+Vectors are0-indexed, meaning the first element has index 0, the second index 1, and so on.
+
+We can access elements within a vector by vector[index]
+
+Adding and Removing Elements:
+We often start with a vector that's either empty or a certain length.
+We can add more elements into the vector as we need using the .push_back() function.
+The .push_back() function adds elements at the end of the vector.
+
+We can also remove elements from the end of the vector using .pop_back().
+
+Note: .pop_back(0 has no return value in C++.
+
+.size():
+<std::vector> not only stores the elements, it also stores the size of the vector.
+The .size() function returns the number of elements in the vector.
+
+Operations:
+We can do operations with vectors or any other container with logic such as for, while, and etc asides from built in functions.
+
+Arrays:
+Like vectors, the array is a data structure used in C++ to store a sequential collection of elements.
+Unlike vectors, it's size cannot be changed.
+
+Arrays in C++ are similar to vectors in that they allow us to store groups of information. However, arrays are lower-level constructs and require some more work on the part of the user.
+As arrays are inherited from C, C++'s parent language, it means they are rigid.
+With arrays, we can't add or remove elements, and can only modify existing elements.
+
+Vectors originate from array, and in the early creation of C++, the language developers took these basic arrays and wrote code to enhance them and make them more flexible nad powerful.
+Vectors don't require a static size, and it's possible to add and remove elements from them, as well as access their current size at any time.
+
+When creating an array, we need two pieces of information:
+The type of data we want to store inside of it
+How many items we want it to be able to hold (size)
+Declaration:
+int favoriteNums[4]; // declares an array of size 4 for int type
+
+Initialization:
+int favoriteNums[] = {7, 9, 15, 16}; // initializes an array with 4 integers.
+
+Similar to vectors, arrays start with index 0.
+
+Review:
+Vectors are a sequence of elements that we can access by index.
+The first index in a vector is 0.
+Some of the functions that come with vectors:
+.push_back()
+.pop_back()
+.size().
+We can do operations on vectors.

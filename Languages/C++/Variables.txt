@@ -1,0 +1,105 @@
+Introduction to Variables:
+A variable is simply a name that represents a particular piece of our computer's memory that has been set aside for us to store, retrieve, and use data.
+We will learn about basic data types:
+int: integer numbers
+double: floating-point numbers
+char: individual characters
+string: a sequence of characters
+bool: true/false values
+
+Every variable has a type, which represents the kind of information we can store inside it. It tells our compiler how much memory to set aside for the variable, and it defines what we can do with the variable.
+
+Step 1: Declare a Variable:
+Before we can use a variable, we must declare, or create, it. To declare a variable, we provide two things:
+A type for the variable
+A name for the variable
+Example:
+int score;
+int is the type of the variable
+score is the name of the variable
+; is to end the statement
+
+In C++, variable names consist only of upper/lower case letters, digits, and/or underscores.
+Note: C++ is known as a strnogly typed language. If we try to give an integer value a decimal number, we're going to get unexpected results, warnings, or errors.
+
+Step 2: Initialize a Variable:
+After we declare a variable, we can give it a value.
+Example:
+int score;
+score = 0;
+The score is the name of the variable
+The - indicates assignment
+The 0 is the value that we're going to store inside the variable
+
+Note: In C++, a signle equal sign does not mean equal.
+
+Comining Step 1 and Step 2:
+We can combine both into one line.
+Example:
+int score = 0;
+
+int score - declaration
+score = 0; - initialization
+
+Arithmetic Operators:
+Arithmetic operators:
++ - addition
+- - subtraction
+* - multiplication
+/ - division
+% - modulo (divides and gives the remainder)
+
+Note: The order of operations can be specified using parentheses. For example, the use of parentheses in score = 5 * (4+3) will do (4+3) first.
+
+Chaining:
+Instead of writing multiple std::cout, we can instead chain them.
+Example:
+int age = 28;
+
+std::cout << "Hello, I am ";
+std::cout << age;
+std::cout <<" years old\n";
+
+into
+
+int age = 28;
+std::cout << "Hello, I am " << age << " years old\n";
+
+We use quotes when we want a literal string and not when we refer to teh value of something with a name (like a variable)
+
+User Input:
+We can ask the user for input.
+Example:
+std::cout << "Enter your password: ";
+std::cin >> password;
+
+cin refers to the standard input stream for character input.
+The second operand of the >> operator specifies where that ipnut goes.
+
+Datatype Modifiers:
+Data type modifiers in C++ can modify the length of data that a particular data type would hold:
+signed
+unsigned
+short
+long
+
+Const:
+const (constant) variables cannot be changed by our program during execution.
+Adding const before the data type during declaration makes the variable not modifiable.
+
+Type Conversion:
+A type cast is basically a conversion from one type to another.
+The notation (type) value means convert value to type.
+
+Note: Going from a double to an int simply removes the decial. There's no rounding involved.
+
+Review:
+A variable represents a particular piece of our computer's memory that has been set aside for us to use to store, retrieve, and manipulate data.
+C++ basic data types include:
+int - integers
+double - floating-point numbers
+char - individual characters
+string - sequence of characaters
+bool - true/false
+= indicates assignment
+cin is to receive input from the user

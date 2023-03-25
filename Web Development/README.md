@@ -20,3 +20,10 @@ In this path, it'll go over all of the major technologies that a full-stack deve
 - E-Commerce Site (Two Parts) : Over the course of two parts, build a full-stack web app where users can purchase products using the PERN stack (PostgreSQL, Express, React, Node)
 - Open-Ended Project : A project of our choosing using what we learned in this path.
 
+
+## Why Fullstack?
+You may be wondering why I as an Electrical Engineer who want to do controls and machine is learning fullstack development\
+I believe that one should always be learning, regardless of what subject it is.\
+This intersectionality will allow me to experience fullstack issues and build a more solid foundation so that I may be contribute more to whatever I am working on.
+
+Plus, it's also nice to know and understand how things work and I can use this to create my personal website and resume. 

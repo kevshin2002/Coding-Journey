@@ -25,7 +25,7 @@ Under this box model, the border thickness and padding are added to the overall 
 This makes it difficult to accurately size a box.\
 Over time, this can make all of a web page's content difficult to position and manage.
 
-## __Box Model: Content-Box:__
+## __Box Model: Content-Box__
 Many properties in CSS have a default value and don't have to be explicitly set in the stylesheet.\
 For example, the default font-weight of the text is normal, but this property-value pair is not typically specified in a stylesheet.
 
@@ -67,7 +67,7 @@ h1 {
 In the example above, the height of the box would remain at 200 pixels and the width would remain at 300 pixels.\
 The border thickness and padding would remain entirely inside of the box.
 
-## __The New Box Model:__
+## __The New Box Model__
 Implementation Example:
 ```css
 * {
@@ -76,7 +76,7 @@ Implementation Example:
 ```
 This universal selector targets all elements on the web page and sets their box model to the border-box model.
 
-## __Review:__
+## __Review__
 - In the default box model, box dimensions are affected by border thickness and padding. This means box dimensions are affected by border thickness and padding.
 - The box-sizing property controls the box model used by the browser.
 - The default value of the box-sizing property is content-box.

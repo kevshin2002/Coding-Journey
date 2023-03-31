@@ -8,16 +8,16 @@ All HTML elements are made up of four components:
 We use these four element properties and use them to position elements on a web page.\
 This note will introduce how Google Chrome's DevTools can be used to view the box around each element on a web page.
 
-## __View Box Model Dimensions with DevTools:__
+## __View Box Model Dimensions with DevTools__
 We can use Google Chrome's DevTools to view the box around every element on a web page.\
 There are a few different ways to open DevTools, depending on our platform:\
 
-### __Mac:__
+### __Mac__
 command + option + i\
 View > Developer > Developer Tools\
 Chrome 3 dot menu: > More Tools > Developer Tools
 
-### __Windows:__
+### __Windows__
 contrl + shift + i\
 F12\
 Chrome 3 dot menu: > More Tools > Developer Tools

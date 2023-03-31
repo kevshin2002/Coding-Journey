@@ -17,14 +17,14 @@ HTML is composed of elements. Elements structure the webpage and define its cont
 
 There are many tags that we can use to organize and display text and other types of content like images.
 
-## __Overview of each Element:__
+## __Overview of each Element__
 - HTML element - a unit of content in an HTML document formed by HTML tags and the text or media it contains\
 - HTML Tag - the element name, surrounded by an opening and closing angle bracket.\
 - Opening Tag - the first HTML tag used to start an HTML element.\
 - Content - The information(text or other elements) contained between the opening and closing tags of an HTML element.\
 - Closing Tag - the second HTML tag used to end an HTML element. Closing tags have a forward slash (/) inside of them, directly after the left angle bracket.
 
-## __Body Element:__
+## __Body Element__
 One of the key HTML elements that is used to build a webpage is the body element. Only content inside the opening and closing body tags can be displayed to the screen.\
 Once the file has a body, many different types of content including text, images, and buttons can be added to the body.\
 ```html
@@ -35,7 +35,7 @@ Once the file has a body, many different types of content including text, images
 Note: While some browsers may render some content outside body tags as well to accommodate the occasional mistake in your HTML, not all browsers do this! \
 The best way to ensure that all your HTML renders the same way in all browsers is to ensure that your elements remain within the opening and closing body tags.
 
-## __HTML Structure:__
+## __HTML Structure__
 HTML is organized as a collection of family tree relationships. When an element is contained inside another element, it is considered the child of that element.\
 The child element is said to be nested inside of the parent element.\
 Example:
@@ -61,7 +61,7 @@ Complicated Example:
 This example has `<body>` being the parent of `<div>`. Both `<h1>` and `<p>` are children of the `<div>` element and since these two elements are at the asme level, they are considered siblings and are both grandchildren of the `<body>` element\
 Understanding HTML hierarchy is important as child elements can inherit behavior and styling from parent elements.
 
-## __Headings:__
+## __Headings__
 Headings in HTML are similar to headings in other types of media. They are used to capture a reader's attention but can also be used to describe content.\
 HTML follows a similar pattern. In HTML, there are six different headings, or heading elements.\
 Headings can be used for a variety of purposes like titling sections, articles, or other forms of content.\
@@ -74,7 +74,7 @@ HTML Heading Elements from largest to smallest in size:
 `<h5>`\
 `<h6>`
 
-## __Divs:__
+## __Divs__
 One of the most popular elements in HTML is the `<div>` element. `<div>` is short for "division" or a container that divides the page into sections.
 They're very useful for grouping elements in HTML together.
 
@@ -92,7 +92,7 @@ Example:
 We can also style the `<div>` element as a whole.\
 `<div>`s ca ncontain any text or other HTML elements, such as links, images, or  videos. It's always good practice to add two spaces of indentation when nesting elements inside of `<div>`s for better readability.
 
-## __Attributes:__
+## __Attributes__
 If we want to expand an element's tag, we can do so using an attribute.\
 Attributes are content added to the opening tag of an element and can be used in several different ways, from providing information to changing styling.\
 Attributes are made up of the following two parts:\
@@ -108,7 +108,7 @@ Example:
 </div>
 ```
 
-## __Displaying Text:__
+## __Displaying Text__
 Displaying text can be done either via paragraph or span:\
 Paragraphs`<p>` contain a block of plain text.\
 `<span>` contains short pieces of text or other HTML. They're used to separate small peices of content that are on the same line as other content.\
@@ -125,17 +125,17 @@ Example:
 There are two different `<div>` in this example and the second `<div>` contains a `<p>` with <span>. The `<span>` is useful when trying to target a specific piece of content that is inline or on the same line as other text.\
 If we want to divide content into blocks, it's better to use a `<div>`.
 
-## __Styling Text:__
+## __Styling Text__
 HTML tags can also style text. The `<em>` tag emphasizes text, while the `<strong>` tag highlights important text.\
 `<em>` tag generally render as italic emphasis.\
 `<strong>` tag generally render as bold emphasis.
 
 
-## __Line Breaks:__
+## __Line Breaks__
 The spacing between code in an HTML file doesn't affect the positioning of elements in the browser. If we want to modify the spacing in the browser, we can use HTML's line break element `<br>`.\
 The line break element is unique because it is only composed of a starting tag. We can use it anywhere within the HTML code and a line break will show up.
 
-## __Unordered Lists:__
+## __Unordered Lists__
 We can use unordered list tag `<u1>` to create a list of items in no particular order. An unordered list outlines individual list items with a bullet point.\
 The `<ul>` element should not hold raw text and won't automatically format raw text into an unordered list of items.\
 Individual list items must be added to the unordered list using the `<li>` tag.\
@@ -150,7 +150,7 @@ Example:
 </ul>
 ```
 
-## __Ordered Lists:__
+## __Ordered Lists__
 Ordered lists are like unordered list except that each list item is numbered.\
 Example:
 ```html
@@ -162,7 +162,7 @@ Example:
 </ol>
 ```
 
-## __Images:__
+## __Images__
 The <img> tag allows us to add an image to a web page. Most elements require both opening and closing tags but the `<img>` tag is a self-closing tag.\
 Self-closing tags may include or omit the final slash - both will render properly.\
 Example:
@@ -171,7 +171,7 @@ Example:
 The `<img>` tag has a required attribute called src and this value must be set to the image's source or location of the image. \
 In this case, the value is the uniform resource locator (URL). A URL is the web address or local address where a file is stored.
 
-## __Image Alts:__
+## __Image Alts__
 In order to make the web more inclusive, we need to consider what happens when assistive technologies such as screen readers come across image tags.\
 The alt attribute which means alternative text, brings meaning to the images on our sites. The alt attribute can be added to the image tag just like the src attribute.\
 The value of alt should be a description of the image.\
@@ -186,7 +186,7 @@ When we include the alt attribute, the screen reading software can read the imag
 - The alt attribute also plays a role in Search Engine Optimization (SEO), because search engines cannot "see" the images on websites as they crawl the internet.\
 Having descriptive alt attributes can improve the ranking of our site.
 
-## __Videos:__
+## __Videos__
 HTML also supports displaying videos. Similar to the `<img>` element, the `<video>` element requires a src attribute with a link to the video source.\
 Unlike the `<img>` element, the `<video>` element requires an opening and a closing tag.\
 Example:
@@ -201,7 +201,7 @@ After the src attribute, the width and height attributes are used to set the siz
 The controls attribute instructs the browser ot include basic video controls such as pausing and playing.\
 The text will only display if the browser is unable to load the video.
 
-## __Review:__
+## __Review__
 - HTML stands for HyperText Markup Language and is used to create the structure and content of a webpage.
 - Most HTML elements contain opening and closing tags with raw text or other HTML tags between them.
 - HTML elements can be nested inside other elements. The enclosed element is the child of the enclosing parent element.

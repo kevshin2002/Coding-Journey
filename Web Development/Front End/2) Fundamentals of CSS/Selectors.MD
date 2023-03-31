@@ -1,5 +1,5 @@
 # __Selectors__
-## __Type:__
+## __Type__
 Declarations are a fundamental part of CSS because they aplpy a style to a selected element, but choosing which elements get certain styles are done so with a selector.\
 A selector is used to target the specific HTML element(s) to be styled by the declaration.\
 One selector we're familiar with is the type selector, and just like the name, the type selector matches the type of the element in the HTML document.\
@@ -14,7 +14,7 @@ Some important notes on the type selector:\
 The type selector does not include the angle brackets.\
 Since element types are often referred to by their opening tag name, the type selector is sometimes referred to as the tag name or element selector.
 
-## __Universal:__
+## __Universal__
 There is a selector that is a universal selector, which selects all elements of any type.\
 Targeting all of the elements on the page has a few specific use cases, such as resetting default browser styling, or selecting all children of a parent element.\
 The universal selector uses the * character in the same place where we specified the type selector in a ruleset.\
@@ -26,7 +26,7 @@ Example:
 ```
 The code will have all text element changed to Verdana.
 
-## __Class:__
+## __Class__
 CSS is not limited to selecting elements by their type.\
 HTML as we know can have attributes, and in CSS, we can use the class attribute as a way to select an element.\
 Example:
@@ -41,7 +41,7 @@ Example:
 ```
 To select an HTML element by its class using CSS, a period (.) must be prepended to the class's name. In the example above, the class is brand, so the CSS selector for it is .brand.
 
-## __Multiple Classes:__
+## __Multiple Classes__
 It's possible to add more than one class name to an HTML element's class attribute.\
 For instance, perhaps there's a heading element that needs to be green and bold. We can write two CSS rulesets like so:\
 Example:
@@ -61,7 +61,7 @@ Example:
 We can add multiple classes to an HTML element's class attribute by separating them with a space.\
 This allows us to mix and match CSS classes to create many unique styles without writing a custom class for every style combination needed.
 
-## __ID:__
+## __ID__
 Sometimes, it's important to select a single element with CSS to give it it's own unique style.\
 If an HTML element needs to be styled uniquely, we can give it an ID using the id attribute.\
 Example:
@@ -78,7 +78,7 @@ Example:
 
 The id name is large-title, therefore the CSS selector for it is #large-title.
 
-## __Attribute:__
+## __Attribute__
 The attribute selector can be used to target HTML elements that already contain attributes.\
 Elements of the same type can be targeted differently by their attribute or attribute value.\
 This alleviates the need to add new code, like the class or id attributes.\
@@ -113,7 +113,7 @@ The attribute selector is used to target each image individually.\
 The first ruleset looks for an img element with an attribute of src that contains the string 'winter', and sets the height to 50px.\
 THe second ruleset looks for an img element with an attribute of src that contains the string 'summer', and sets the height to 100px.
 
-## __Pseudo-class:__
+## __Pseudo-class__
 We have observed how the appearance of ceratin elements can change, or be in a different state, after certain user interactions.\
 For instance:\
 When we click on an `<input>` element, and a blue border is added showing that it is in focus.\
@@ -132,7 +132,7 @@ p:hover {
 ```
 This code will have the element turn limegreen when a mouse hovers over the paragraph element.
 
-## __Classes and IDs:__
+## __Classes and IDs__
 CSS can select HTML elements by their type, class, and ID.\
 CSS classes and IDs have different purposes, which can affect which one we use to style HTML elements.
 
@@ -144,7 +144,7 @@ Instead of writing separate CSS rules for each of them, we can reuse the class a
 While classes are meant to be reused and recycled, an ID is meant to style only one element.\
 IDs override the styles of types and classes, and since IDs override these styles, they should be used sparingly and only on elements that need to always appear the asme.
 
-## __Specificity:__
+## __Specificity__
 Specificity is the order by which the browser decides which CSS styles will be displayed.\
 A best practice in CSS is to style the elements while using the lowest degree of specificity so that if an element needs a new style, it's easy to override.
 
@@ -168,7 +168,7 @@ Overtime, as our files grow, many elements may have IDs, which makes CSS difficu
 To make styles easy to edit, it's best to style with a type selector, and if possible, use a class selector.\
 If this isn't specific enough, we only then consider using an ID selector.
 
-## __Chaining:__
+## __Chaining__
 When writing CSS rules, it's possible to require an HTML element to have two or more CSS selectors at the same time.\
 This is done by combining multiple selectors, which we refer to as chaining.\
 For example, if there was a special class for `<h1>` elements, the CSS would look like this:
@@ -179,7 +179,7 @@ h1.special {
 ```
 The code above only selects the `<h1>` elements with a class of special. If a `<p>` element also had a class of special, the rule in the example would not style the paragraph.
 
-## __Descendant Combinator:__
+## __Descendant Combinator__
 In addition to chaining selectors to select elements. CSS also supports selecting elements that are nested within other HTML elements, also known as descendants.\
 Consider:
 ```html
@@ -201,7 +201,7 @@ The descendant `<li>`'s are selected by adding li to the selector, separated by 
 This results in .main-list li as the final selector.\
 Selecting elements in this way can make our selectors even more specific by making sure they appear in the context we expect.
 
-## __Chaining and Specificity:__
+## __Chaining and Specificity__
 Adding more than one tag, class, or ID to a CSS selector increases the specificity of the CSS selector.\
 Example:
 ```css
@@ -217,7 +217,7 @@ Both of these CSS rules define what a `<p>` element should look like.\
 Since .main p has a class and a p type as its selector, only the `<p>` elements inside the .main element will appear red.\
 This occurs despite there being another more general rule that states `<p>` elements should be blue.
 
-## __Multiple Selectors:__
+## __Multiple Selectors__
 In order to make CSS more concise, it's possible to add CSS styles to multiple CSS selectors all at once.\
 This prevents writing repetitive code.\
 Consider:
@@ -238,7 +238,7 @@ h1, .menu {
 ```
 By separating the CSS selectors with a comma, both the `<h1>` elements and the elements with the menu class will receive the font-family: Georgia styling.
 
-## __Review:__
+## __Review__
 - CSS can select HTML elements by type, class, ID, and attribute.
 - All elements can be selected using the universal selector.
 - An element can have different states using the pseudo-class selector.

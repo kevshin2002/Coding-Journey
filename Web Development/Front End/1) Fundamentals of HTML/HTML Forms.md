@@ -1,12 +1,12 @@
 # __HTML Forms__
 
-## __Introduction to HTML Forms:__
+## __Introduction to HTML Forms__
 Forms are a part of everyday life.\
 When we use a physical form in real life, we write information and give it to someone to process.
 
 We can use forms in HTML by using the `<form>` element, which is responsible for collecting information to send somewhere else.
 
-## __How a Form Works:__
+## __How a Form Works__
 We can think of the internet as a network of computers which send and receive information.\
 Computers need an HTTP request to know how to communicate.\
 The HTTP request instructs the receiving computer how to handle the incoming information.
@@ -37,7 +37,7 @@ Example:
 
 The example doesn't collect any user input but rather an interface for it.
 
-## __Text Input:__
+## __Text Input__
 If we want to create an input field in our `<form>`, we need the `<input>` element.\
 The `<input>` element has a type attribute which determines how it renders on the web page and what kind of data it can accept.
 
@@ -63,7 +63,7 @@ Example:
 </form>
 ```
 
-## __Adding a Label:__
+## __Adding a Label__
 For a user to properly identify an `<input>` we use the appropriately named `<label>` element.
 
 The `<label>` element has an opening and closing tag and displays text that is written between the opening and closing tags.\
@@ -78,7 +78,7 @@ Example:
 ```
 Note: if input is within label, then we do not the id as input is a child of label.
 
-## __Password Input:__
+## __Password Input__
 If we want to censor sensitive input, we can use the type password for `<input>`\
 An `<input type = "password">` will replace input text with another character like an asterisk or a dot.\
 Example:
@@ -88,7 +88,7 @@ Example:
 	<input type = "password" id = "user-password" name = "user-password">
 </form>
 ```
-## __Number Input:__
+## __Number Input__
 if we want our users to input a number, we can use the type: number.\
 By setting type = "number" for an input, we can restrict what users type into the input field to just numbers and a few special characters like -, +, and ..\
 We can also provide a step attribute which creates arrows inside the input field to increase or decrease by the value of the step attribute.\
@@ -99,7 +99,7 @@ Example:
 	<input id = "years" name = "years" type = "number" step = "1">
 </form>
 ```
-## __Range Input:__
+## __Range Input__
 If we want to limit what number our users can type, we can consider using the "range" which creates a slide.\
 To set the minimum and maximum values of the slider, we assign values to the min and max attribute of the input.\
 We could also control how smooth and fluid the slider works by assigning the step attribute a value.\
@@ -111,7 +111,7 @@ Example:
 	<input id = "volume" name = "volume" type = "range" min = "0" max = "100" step = "1">
 </form>
 ```
-## __Checkbox Input:__
+## __Checkbox Input__
 What if we presented multiple options to users and allow them to select any number of options?\
 In a form, we would use the `<input>` element and set type to checkbox.\
 Example:
@@ -131,7 +131,7 @@ Example:
 Note: We assign values to the value attribute as the values aren't visible on the form itself.\
 Each input has the same value for the name attribute. Using the same name for each checkbox groups the inputs together. However, each input has a unique id to pair with a label.
 
-## __Radio Button Input:__
+## __Radio Button Input__
 Checkboxes work well if we want to present users with multiple options and let them choose one or more of the options.\
 However, what if we want to present multiple options and only allow for one selection?\
 We would use radio buttons.\
@@ -149,7 +149,7 @@ Example:
 Radio buttons (like checkboxes) do not display their value.\
 To gruop radio buttons together, we assign them the same name and only one radio button from that group can be selected.
 
-## __Dropdown list:__
+## __Dropdown list__
 If we have a whole list of options, a better method is to use a dropdownlist to allow our users to choose one option from an organized list.\
 Example:
 ```hmtl
@@ -167,7 +167,7 @@ Example:
 We use the `<select>` to create the dropdown list and `<option>` to populate the list.\
 By default, only one of the options can be selected.
 
-## __Datalist Input:__
+## __Datalist Input__
 Even if we have an organized dropdown list, if the list has a lot of options, it could be tedious for users to scroll through the entire list to locate one option.\
 That's where using the `<datalist>` element comes in handy.
 
@@ -195,7 +195,7 @@ Note: While `<select>` and `<datalist>` share some similarities, there are diffe
 In the associated `<input>` element, users can type in the input field to search for a particular option. If none matches, they can still use what they typed in.\
 When the form is submitted, the value of the `<input>`'s name and the value of the option selected, or what the user typed in, is sent as a pair.
 
-## __Textarea element:__
+## __Textarea Element__
 When we need users to write in information that's alot, we can use `<textarea>`\
 The `<textarea>` element is used to create a bigger text field for users to write more text.\
 We can add the attributes rows and cols to determine the amount of rows and columns for the `<textarea>`.\
@@ -210,7 +210,7 @@ Example:
 ```
 If we want a default text inside, we would add text between the opening and closing tag.
 
-## __Submit Form:__
+## __Submit Form__
 Once we put in various input elements, we can create a submit button.\
 To make a submit button, we use the type submit.\
 Example:
@@ -221,7 +221,7 @@ Example:
 ```
 The text that value is assigned is what shows up as text on the button. If there isn't a value attribute, the default text, SUbmit shows up.
 
-## __Review:__
+## __Review__
 - The purpose of a `<form>` is to allow users to input information and send it.
 - The `<form>`'s action attribute determines where the form's information goes.
 - The `<form>`'s method attribute determines how the information is sent and processed.

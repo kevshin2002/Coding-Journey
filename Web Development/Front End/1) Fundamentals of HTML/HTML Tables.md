@@ -6,7 +6,7 @@ To create a table, we use:
 </table>
 ```
 
-## __Table Rows:__
+## __Table Rows__
 In HTML, we have to create all the rows, columns, and cells that will hold data.\
 Example: (Will add table rows)
 ```html
@@ -18,7 +18,7 @@ Example: (Will add table rows)
 </table>
 ```
 
-## __Table Cell Elements:__
+## __Table Cell Elements__
 Each cell element must also be defined and can be done so using table data element, `<td>`\
 Example:
 ```html
@@ -29,7 +29,7 @@ Example:
 	</tr>
 </table>
 ```
-## __Table Headings:__
+## __Table Headings__
 To add titles ro rows and columns, we can use the table heading element, `<th>`\
 The table heading element is used just like a table data element, except with a relevant title.\
 Like table data, a table heading must be placed within a table row.\
@@ -56,7 +56,7 @@ The scope attribute can take one of two values:\
 row - value makes the heading a row\
 col - value makes the heading a column
 
-## __Table Borders:__
+## __Table Borders__
 A border can be added to a table using the border attribute and setting it equal to an integer. This integer represent the thickness of the border.\
 This can only be found in older versions of HTML and doesn't work in newer versions.\
 Example:
@@ -77,7 +77,7 @@ table, td{
 }
 ```
 
-## __Spanning Columns:__
+## __Spanning Columns__
 Data can span columns using the colspan attribute. The attribute accepts an integer (greater than or equal to 1) to denote the number of columns it spans across.\
 Example:
 ```html
@@ -96,7 +96,7 @@ Example:
 The example above will have "Out of Town" span the Monday and Tuesday table headings using the value 2 (two columns). The data "Back in Town" appear only under the Wednesday Heading.
 
 
-## __Spanning Rows:__
+## __Spanning Rows__
 Data can also span multiple rows using the rowspan.\
 The rowspan attribute is used for data that spans multiple rows (perhaps an event goes on for multiple hours on a certain day).\
 It accepts an integer (greater than or equal to 1) to denote the number of rows it spans across.\
@@ -129,7 +129,7 @@ Second row - contains the "Morning" row heading, along with "work", which spans 
 Third row - contains the "Afternoon" row heading\
 Fourth row - contains the "Dinner" entry
 
-## __Table Body:__
+## __Table Body__
 A table can grow to contain a lot of data and become very long. When this happens, the table can be sectioned off so that it's easier to manage.\
 Long tables can be sectioned off using the table body element `<tbody>`\
 The `<tbody>` element should contain all of the table's data, excluding the table headings.\
@@ -157,7 +157,7 @@ Example:
   </tbody>
 </table>
 ```
-## __Table Head:__
+## __Table Head__
 When a table's body is sectioned off, it makes sense to section off the table's column headings using the `<thead>` element.\
 Example:
 ```html
@@ -188,7 +188,7 @@ Example:
 In the example above, the only new element is `<thead>`. The table headings are contained inside of this element. Note that the table's head still requires a row in order to contain the table headings.\
 Additionally, only the column headings go under the `<thead>` element. We can use the scope attribute on a `<th>` element to indicate whether a `<th>` element is being used as a row heading ora  col heading.
 
-## __Table Footer:__
+## __Table Footer__
 The bottom part of a long table can also be sectioned off using the `<tfoot>` element>\
 Example:
 ```html
@@ -223,7 +223,7 @@ Example:
 ```
 In the example above, the footer contains the totals of the data in the table. Footers are often used to contain sums, differences, and other data results.
 
-## __Styling with CSS:__
+## __Styling with CSS__
 Tables by default are bland. They have no borders, the font color is black, and the typeface is the same type used for other HTML elements.\
 CSS, or Cascading Style Sheets, is a language that web developers use to style the HTML content on a web page.\
 Using CSS, we can style tables:\
@@ -236,7 +236,7 @@ table, th, td {
 }
 ```
 
-## __Review:__
+## __Review__
 - The `<table>` element creates a table.
 - The `<tr>` element add rows to a table.
 - To add data to a row, we use `<td>` element.

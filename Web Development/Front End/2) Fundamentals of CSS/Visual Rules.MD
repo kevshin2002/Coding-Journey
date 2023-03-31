@@ -1,9 +1,9 @@
 # __Visual Rules__
-# __Introduction to Visual Rules:__
+# __Introduction to Visual Rules__
 The purpose of CSS is to add style to web page, and each element on the page can have many style properties.\
 Some of the basic properties relate to the size, style, and color of the element.
 
-## __Font Family:__
+## __Font Family__
 Font refers to the technical term typeface, or font family.\
 To change the typeface of text on our webpage, we can use the font-family property.\
 Example:
@@ -24,7 +24,7 @@ h1 [
 	font-family: 'Courier New';
 ]
 ```
-## __Font Size:__
+## __Font Size__
 Changing the typeface isn't hte only way to customize the text.\
 Oftentimes, different sections of a web page are highlighted by modifying the font size.
 
@@ -44,7 +44,7 @@ Two other units: em and rem (relative to fonts)
 
 These two units are more natural to responsive design whereas pixels are not.
 
-## __Font Weight:__
+## __Font Weight__
 In CSS, the font-weight property controls how bold or thin text appears.\
 Example:
 ```css
@@ -57,7 +57,7 @@ The font-weight property has another value which is normal.\
 This exists to selectively partition different font-weights.\
 For example, if we wanted all text on the web page to appear bolded, we can do that but select certain text to appear normal.
 
-## __Text Align:__
+## __Text Align__
 No matter how much styling is applied to text(typeface, size, weight, etc.), the text always appears on the left side of the container in which it resides.\
 To align text, we can use the text-align property. The text-align property will align text to the element that holds it, otherwise known as its parent.\
 Example:
@@ -72,7 +72,7 @@ The text-align property can be set to one of the following commonly used values:
 - right - aligns text to the right side of its parent element.
 - justify - spaces out text in order to align with the right and left side of the parent element.
 
-## __Color and Background Color:__
+## __Color and Background Color__
 Color can affect the following design aspects:
 - Foreground color
 - Background color
@@ -93,7 +93,7 @@ h1 {
 ```
 The text of the heading will appear red and the background of the heading will appear blue.
 
-## __Opacity:__
+## __Opacity__
 Opacity is the measure of how transparent an element is. It's measured from 0 to 1, with 1 representing 100% or fully visible and 0 representing 0%.\
 Opacity can be used to make elements fade into others for a nice overlay effect.\
 Example:
@@ -104,7 +104,7 @@ Example:
 ```
 This will show whatever it's behind to show.
 
-## __Background Image:__
+## __Background Image__
 CSS has the ability to change the background of an element.\
 One option is to make the background of an element an image.\
 This is done through the CSS property background-image.\
@@ -117,7 +117,7 @@ Example:
 The background-image property will set the element's background to display an image.\
 The value provided to background-image is a url. The url should be a URL to an image. The url can be a file within our project or it can be a link to an external site.
 
-## __Important:__
+## __Important__
 `!important` can be applied to specific declarations, instead of full rules. It will override any style no matter how specific it is.\
 As a result, it should almost never be used. Once `!important` is used, it's very hard to override.\
 Example:
@@ -134,7 +134,7 @@ As `!important` is used on the p selector's color attribute, all p elements will
 One justification for using `!important` is when working with multiple stylesheets. 
 When we override the styles for one specific HTML element, we can use the `!important` property to ensure it isn't overriden.
 
-## __Review:__
+## __Review__
 - The font-family property defines the typeface of an element.
 - font-size controls the size of text displayed.
 - font-weight defines how thin or thick text is displayed.

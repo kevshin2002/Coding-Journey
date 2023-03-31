@@ -1,5 +1,5 @@
 # The Box Model
-## __Introduction to the Box Model:__
+## __Introduction to the Box Model__
 Browsers load HTML elements with default position values.\
 This often leads to an unexpected and unwanted user experience while limiting the views we can create.\
 In this lesson, we'll learn about the Box Model, which is an important concept to understand how elements are positioned and displayed on a website.
@@ -12,7 +12,7 @@ In this lesson, we'll learn about the following aspects of the following box mod
 - The paddings of an element's box.
 - The margins of an element's box.
 
-## __The Box Model:__
+## __The Box Model__
 The box model comprises the set of properties that define parts of an element that take up space on a web page.\
 The model includes the content area's size (width and height) and the element's padding, border, and margin.\
 The properties include:
@@ -23,7 +23,7 @@ The properties include:
 
 ![](https://content.codecademy.com/courses/freelance-1/unit-4/diagram-boxmodel.svg?_gl=1*12vdxdn*_ga*OTAwMTA5OTMyLjE2NzA4ODEwOTM.*_ga_3LRZM6TM9L*MTY3MjUxODI4Ny4yMi4wLjE2NzI1MTgyODcuNjAuMC4w)
 
-## __Height and Width:__
+## __Height and Width__
 An element's content has two dimensions, a height and a width.\
 By default, the dimensions of an HTML box are set to hold the raw contents of the box.
 
@@ -38,7 +38,7 @@ p {
 This will change the height of the paragraph to 80 pixels and the width to 240 pixels.\
 When we set the element in units of pixels, it will be the same size on all devices which means an element that fills a laptop screen will overflow a mobile screen.
 
-## __Borders:__
+## __Borders__
 A border is a line that surrounds an element, like a frame around a painting.\
 Borders can be set with a specific width, style, and color:
 - width - the thickness of the border. A border's thickness can be set in pixels or with one of the followking keywords: thin, medium, or thick.
@@ -62,7 +62,7 @@ p.content-header {
 ```
 This code doesn't specify a width, so the browser defaults it to medium.
 
-## __Border Radius:__
+## __Border Radius__
 Using CSS, a border doesn't have to be a square.\
 We can modify the corners of an element's border box with the border-radius property.\
 Example:
@@ -86,7 +86,7 @@ div.container {
 ```
 Note: Perfect Circle is made by 100% border-radius and same height/width.
 
-## __Padding:__
+## __Padding__
 The space between the contents of a box and the borders of a box is known as padding.\
 Padding is like the space between a picture and the frame surrounding it. In CSS, we can modify this space with the padding property.\
 Example:
@@ -107,7 +107,7 @@ There are derivatives to this:
 Note: Border also has this.\
 Extra Note: Margin compresses the borders while padding enlarges it. Margin will create the space outside of the element, while padding constricts space inwards.
 
-## __Padding Shorthand:__
+## __Padding Shorthand__
 
 Another implementation of the padding property lets you specify exactly how much padding there should be on each side of the content in a single declaration.\
 A declaration that uses multiple properties as values is known as a shorthand property.
@@ -160,7 +160,7 @@ p {
 The code in the example above will place 20 pixels of space on the outside of the paragraph's box on all four sides.\
 This means that other HTML elements on the page cannot come within 20 pixels of the paragraph's border.
 
-## __Margin Shorthand:__
+## __Margin Shorthand__
 We can also do the shorthand like padding to margin.\
 4 Values\
 Example:
@@ -183,7 +183,7 @@ p {
 	margin: 20px 10px;
 }
 ```
-## __Auto:__
+## __Auto__
 The margin property also lets you center content. However, we have to follow a few syntax requirements.\
 Example:
 ```css
@@ -198,7 +198,7 @@ The auto value instructs the browser to adjust the left and right margins until 
 In order to center an element, a width must be set for that element, otherwise, the width of the div will be automatically set to full width.\
 It's not possible to center an element that takes up the full width of the page since the width of the page can change due to display and/or browser window size.
 
-## __Margin Collapse:__
+## __Margin Collapse__
 Padding is space added inside an element's border while margin is space added outside an element's border.\
 One additional difference is that top and bottom margins, also called vertical margins, collapse, while top and bottom padding does not.
 
@@ -231,7 +231,7 @@ The margin collapses and so the spacing is only dependent on #img-one.
 It's helpful to think of collapsing vertical margins as a short person trying to push a taller person.\
 The tall person has longer arms and can easily push the short person, while the person with shorter arms cannot reach the person with long arms.
 
-## __Minimum and Maximum Height and Width:__
+## __Minimum and Maximum Height and Width__
 Since a web page can be viewed through displays of differing screen size, the content on the web page can suffer from those changes in size.\
 To avoid this problem, CSS offers two properties that can limit how narrow or how wide an element's box can be sized to:
 - min-width - this property ensures a minimum width of an element's box.
@@ -261,7 +261,7 @@ p {
 This will make height of all paragraphs shrink not below 150 pixels and not exceed 300 pixels.\
 If the max-height is set too low, it's possible for the content to spill outside of the box, resulting in content that's not legible.
 
-## __Overflow:__
+## __Overflow__
 All of the components of the box model comprise an element's size.\
 For example, an image that has the following dimensions is 364 pixels wide and 244 pixels talls:
 - 300 pixels wide
@@ -290,7 +290,7 @@ This will have any content within the paragraph that overflow as a scrollable co
 The overflow property is set on a parent element to instruct a web browser on how to render child elements.\
 For example, if a div's overflow property is set to scroll, all children of this div will display overflowing content with a scrollbar.
 
-## __Resetting Defaults:__
+## __Resetting Defaults__
 All major web browsers have a default stylesheet they use in the absence of an external stylesheet.\
 These stylesheets are known as user agent stylesheets.
 
@@ -306,7 +306,7 @@ We can reset it via:
 ```
 This will set all elements within HTML to have 0 margin and 0 padding.
 
-## __Visibility:__
+## __Visibility__
 Elements can be hidden from view with the visibility property.\
 The visibility property can be set to one of the following values:
 - hidden - hides an element
@@ -331,7 +331,7 @@ Furthermore, the web page only hides the contents of the elemnt and will leave a
 
 Note:An element with display:none will be completely removed from the web page, but an element with visibility:hidden will not be visible on the web page but still has the space reserved for it.
 
-## __Review:__
+## __Review__
 - The box model comprises a set of properties used to create space around and between HTML elements.
 - The height and width of a content area can be set in pixels or percentages
 - Borders surround the content area and padding of an element. The color, style, and thickness of a border can be set with CSS properties.

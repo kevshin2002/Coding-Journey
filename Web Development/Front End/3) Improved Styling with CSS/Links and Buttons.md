@@ -93,7 +93,7 @@ These four states can be used to give a full range of visual feedback to users a
 
 Each state should still make it clear that the element in question is a link, meaning it should not make text identical to non-link text or alter the link's appearance so much that users could perceive its behavior differently.
 
-The ordering of link state pseudo-class rules is important to reveal the proper information. When a user hovers and then clicks al ink, those styles should always override the static styling surrounding a user's history with the link (unvisited :link and :visited). The proper order of these rules are:
+The ordering of link state pseudo-class rules is important to reveal the proper information. When a user hovers and then clicks a link, those styles should always override the static styling surrounding a user's history with the link (unvisited :link and :visited). The proper order of these rules are:
 - :link
 - :visited
 - :hover

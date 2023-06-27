@@ -1,2 +1,2 @@
-# Codecademy
-Track/Progress of Codecademy languages and courses.
+# My Coding Journey
+This repo is a collection of all my progress of software skills.

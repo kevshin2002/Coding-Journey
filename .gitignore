@@ -1,0 +1,35 @@
+
+*.db
+*.vsidx
+*.tlog
+*.user
+*.vcxproj
+*.filters
+*.obj
+*.recipe
+*.ilk
+*.log
+*.txt
+*.sln
+*.ipch
+*.pdb
+*.res
+*.manifest
+*.cmake
+*.ninja
+*.exe
+Languages/C++/CMake/LearningCMake/.vs/LearningCMake/v17/.wsuo
+*.lock
+*.json
+*.sqlite
+Languages/C++/CMake/LearningCMake/out/build/x64-debug/.ninja_deps
+Languages/C++/CMake/LearningCMake/out/build/x64-debug/.ninja_log
+*.bin
+*.check_cache
+Languages/C++/Side Projects/Hardware Optimizations/Influence of Computer Architecture/.vs/Influence of Computer Architecture/v17/.suo
+*.idb
+Languages/C++/Side Projects/String Calculator/.vs/String Calculator/v17/.suo
+*.c
+*.rc
+*.h
+Languages/C++/CMake/LearningCMake/out/build/x64-debug/CMakeFiles/3.24.202208181-MSVC_2/CompilerIdCXX/CMakeCXXCompilerId.cpp

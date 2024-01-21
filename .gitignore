@@ -32,9 +32,11 @@ Languages/C++/Side Projects/String Calculator/.vs/String Calculator/v17/.suo
 *.c
 *.rc
 *.h
+*.suo
 Languages/C++/CMake/LearningCMake/out/build/x64-debug/CMakeFiles/3.24.202208181-MSVC_2/CompilerIdCXX/CMakeCXXCompilerId.cpp
 Languages/C++/Side Projects/Basics/Move Semantics/.vs/Move Semantics/v17/.suo
 Leetcode/Leetcode/.vs/Leetcode/v17/.suo
 Tools/.vs/Tools/v17/.suo
 Tools/Design/.vs/Design Patterns/v17/.suo
 Leetcode/Leetcode/.vs/Leetcode/v17/.suo
+Codecademy/Languages/C++/Side Projects/Hardware Optimizations/Influence of Computer Architecture/.vs/Influence of Computer Architecture/v17/.suo

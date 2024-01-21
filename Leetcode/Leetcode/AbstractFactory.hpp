@@ -9,9 +9,6 @@
 #include <functional>
 #include <unordered_map>
 
-
-
-
 namespace Creational {
     // FactoryKeyType MUST be an enum
     template <typename FactoryKeyType, typename FactoryValue, typename... Arguments>

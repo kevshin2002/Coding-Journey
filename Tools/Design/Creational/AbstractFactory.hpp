@@ -1,13 +1,18 @@
-#include <functional>
-#include <unordered_map>
-
-
 /*
 * Created by Kevin Shin, 7/21/2023 
+* The AbstractFactory Pattern as part of a Creational Design Pattern
+* 
+* The functionality of this AbstractFactory consists of:
+* An unordered map with an enum key and a constructor value.
+* This uses perfect forwarding and move semantics.
 */
+
 
 #ifndef AbstractFactory_hpp
 #define AbstractFactory_hpp
+
+#include <functional>
+#include <unordered_map>
 
 namespace Creational {
     // FactoryKeyType MUST be an enum

@@ -16,6 +16,7 @@ namespace Leetcode {
     class TwoSumProblem : public Problem {
     public:
         TwoSumProblem() : Problem("Two Sum") {}
+
         std::stringstream solution() override {
             std::vector<int> listofNums{ 3, 2, 4 };
             int target = 6;
